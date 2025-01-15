@@ -1,0 +1,41 @@
+version: 0.0.1
+type: plugin
+author: blue_pen5805
+name: cerebras
+label:
+  en_US: cerebras
+  ja_JP: cerebras
+  zh_Hans: cerebras
+  pt_BR: cerebras
+description:
+  en_US: Cerebras
+  ja_JP: Cerebras
+  zh_Hans: Cerebras
+  pt_BR: Cerebras
+icon: icon_s_en.png
+resource:
+  memory: 268435456
+  permission:
+    model:
+      enabled: true
+      llm: true
+      text_embedding: false
+      rerank: false
+      tts: false
+      speech2text: false
+      moderation: false
+plugins:
+  models:
+    - provider/cerebras.yaml
+meta:
+  version: 0.0.1
+  arch:
+    - amd64
+    - arm64
+  runner:
+    language: python
+    version: "3.12"
+    entrypoint: main
+created_at: 2025-01-15T11:09:51.247122467Z
+privacy: PRIVACY.md
+verified: false
