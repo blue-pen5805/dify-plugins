@@ -20,6 +20,27 @@ parameter_rules:
     default: 1024
     min: 1
     max: 8192
+  - name: seed
+    label:
+      en_US: Seed
+    type: int
+    help:
+      en_US:
+        If specified, model will make a best effort to sample deterministically,
+        such that repeated requests with the same seed and parameters should return
+        the same result. Determinism is not guaranteed, and you should refer to the
+        system_fingerprint response parameter to monitor changes in the backend.
+    required: false
+  - name: response_format
+    label:
+      en_US: Response Format
+    type: string
+    help:
+      en_US: specifying the format that the model must output
+    required: false
+    options:
+      - text
+      - json_object
 pricing:
   input: "0.85"
   output: "1.20"

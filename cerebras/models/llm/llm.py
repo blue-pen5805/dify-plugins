@@ -34,7 +34,7 @@ class CerebrasLargeLanguageModel(OAICompatLargeLanguageModel):
         model_parameters: dict,
         tools: Optional[list[PromptMessageTool]] = None,
         stop: Optional[list[str]] = None,
-        stream: bool = True,
+        stream: bool = False,
         user: Optional[str] = None,
     ) -> Union[LLMResult, Generator]:
         self._add_custom_parameters(credentials)

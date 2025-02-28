@@ -1,4 +1,4 @@
-version: 0.0.1
+version: 0.0.2
 type: plugin
 author: blue_pen5805
 name: cerebras
@@ -14,7 +14,7 @@ description:
   pt_BR: Cerebras
 icon: icon_s_en.png
 resource:
-  memory: 268435456
+  memory: 1048576
   permission:
     model:
       enabled: true
