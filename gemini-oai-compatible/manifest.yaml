@@ -1,4 +1,4 @@
-version: 0.0.1
+version: 0.0.2
 type: plugin
 author: blue_pen5805
 name: gemini-oai-compatible
@@ -14,16 +14,11 @@ description:
   pt_BR: Gemini (OpenAI Compatible)
 icon: icon_s_en.svg
 resource:
-  memory: 268435456
+  memory: 1048576
   permission:
     model:
       enabled: true
       llm: true
-      text_embedding: false
-      rerank: false
-      tts: false
-      speech2text: false
-      moderation: false
 plugins:
   models:
     - provider/gemini-oai-compatible.yaml

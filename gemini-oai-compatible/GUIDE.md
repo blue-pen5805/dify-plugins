@@ -5,6 +5,7 @@ Hi there, looks like you have already created a Plugin, now let's get you starte
 ### Choose a Plugin type you want to develop
 
 Before start, you need some basic knowledge about the Plugin types, Plugin supports to extend the following abilities in Dify:
+
 - **Tool**: Tool Providers like Google Search, Stable Diffusion, etc. it can be used to perform a specific task.
 - **Model**: Model Providers like OpenAI, Anthropic, etc. you can use their models to enhance the AI capabilities.
 - **Endpoint**: Like Service API in Dify and Ingress in Kubernetes, you can extend a http service as an endpoint and control its logics using your own code.
@@ -41,7 +42,7 @@ Now you can edit the `manifest.yaml` file to describe your Plugin, here is the b
       - speech2text(bool)
       - moderation(bool)
     - node(object)：Reverse call node permission
-      - enabled(bool) 
+      - enabled(bool)
     - endpoint(object)：Allow to register endpoint permission
       - enabled(bool)
     - app(object)：Reverse call app permission
@@ -69,11 +70,11 @@ Now you can edit the `manifest.yaml` file to describe your Plugin, here is the b
 
 ### Install Dependencies
 
-- First of all, you need a Python 3.10+ environment, as our SDK requires that.
+- First of all, you need a Python 3.11+ environment, as our SDK requires that.
 - Then, install the dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
+  ```bash
+  pip install -r requirements.txt
+  ```
 - If you want to add more dependencies, you can add them to the `requirements.txt` file, once you have set the runner to python in the `manifest.yaml` file, `requirements.txt` will be automatically generated and used for packaging and deployment.
 
 ### Implement the Plugin
@@ -110,7 +111,6 @@ dify-plugin plugin package ./ROOT_DIRECTORY_OF_YOUR_PLUGIN
 ```
 
 you will get a `plugin.difypkg` file, that's all, you can submit it to the Marketplace now, look forward to your Plugin being listed!
-
 
 ## User Privacy Policy
 

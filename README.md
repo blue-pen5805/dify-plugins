@@ -15,6 +15,8 @@ This repository is storing **Plugins** for the **[Dify](https://github.com/langg
 
 - **Cerebras**
   - Models provided by [Cerebras](https://cloud.cerebras.ai/)
+- **Gemini-oai-compatible**
+  - [Gemini OpenAI compatibility Endpoint](https://ai.google.dev/gemini-api/docs/openai) (for [llm-proxy-on-cloudflare-workers](https://github.com/blue-pen5805/llm-proxy-on-cloudflare-workers))
 
 ## Development
 

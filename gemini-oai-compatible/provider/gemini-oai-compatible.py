@@ -18,7 +18,7 @@ class GeminiOaiCompatibleModelProvider(ModelProvider):
         """
         try:
             model_instance = self.get_model_instance(ModelType.LLM)
-            model_instance.validate_credentials(model="gemini-1.5-flash", credentials=credentials)
+            model_instance.validate_credentials(model=credentials.get("model_name_prefix", "") + "gemini-2.0-flash", credentials=credentials)
         except CredentialsValidateFailedError as ex:
             raise ex
         except Exception as ex:

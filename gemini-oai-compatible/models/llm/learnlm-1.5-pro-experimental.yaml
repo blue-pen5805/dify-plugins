@@ -24,11 +24,9 @@ parameter_rules:
     max: 8192
   - name: response_format
     label:
-      zh_Hans: 回复格式
       en_US: Response Format
     type: string
     help:
-      zh_Hans: 指定模型必须输出的格式
       en_US: specifying the format that the model must output
     required: false
     options:

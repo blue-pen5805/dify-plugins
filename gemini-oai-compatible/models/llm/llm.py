@@ -38,7 +38,7 @@ class GeminiOaiCompatibleLargeLanguageModel(OAICompatLargeLanguageModel):
         user: Optional[str] = None,
     ) -> Union[LLMResult, Generator]:
         self._add_custom_parameters(credentials)
-        return super()._invoke(model, credentials, prompt_messages, model_parameters, tools, stop, stream)
+        return super()._invoke(credentials.get("model_name_prefix", "") + model, credentials, prompt_messages, model_parameters, tools, stop, stream)
 
     def validate_credentials(self, model: str, credentials: dict) -> None:
         self._add_custom_parameters(credentials)
