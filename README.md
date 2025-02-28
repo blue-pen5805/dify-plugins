@@ -10,3 +10,18 @@ This repository is storing **Plugins** for the **[Dify](https://github.com/langg
 ## Usage
 
 [Official Documentation](https://docs.dify.ai/plugins/quick-start/install-and-use-plugins#install-plugins)
+
+## List of Plugins
+
+- **Cerebras**
+  - Models provided by [Cerebras](https://cloud.cerebras.ai/)
+
+## Development
+
+### Packaging
+
+[Official Documentation](https://docs.dify.ai/plugins/publish-plugins/package-plugin-file-and-publish)
+
+```bash
+dify plugin package ./your_plugin_project
+```
