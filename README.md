@@ -4,24 +4,8 @@ This repository is storing **Plugins** for the **[Dify](https://github.com/langg
 
 ## Requirements
 
-- **Dify Version**: `1.0.0-beta.1` or later
-
-  - To use the plugins in this repository, you need to have Dify version `1.0.0-beta.1` or newer.
-
-- **Environment Variable Setting**
-
-  - You need to set the `FORCE_VERIFYING_SIGNATURE=false` in environment variables of `plugin_daemon`:
-
-    ```yaml
-    ...
-    services:
-      plugin_daemon:
-        ...
-        environment:
-          ...: ...
-          FORCE_VERIFYING_SIGNATURE: false
-    ...
-    ```
+- **Dify Version**: `1.0.0` or later
+- **Environment Variable Setting**:You need to set the `FORCE_VERIFYING_SIGNATURE=false` in environment variables
 
 ## Usage
 
