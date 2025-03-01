@@ -1,0 +1,52 @@
+identity:
+  name: OpenAI / moderation
+  author: blue_pen5805
+  label:
+    en_US: OpenAI / moderation
+description:
+  human:
+    en_US: moderation
+  llm: moderation
+parameters:
+  - name: text
+    type: string
+    form: llm
+    required: false
+    label:
+      en_US: text
+    human_description:
+      en_US: text
+    llm_description: text
+  - name: image
+    type: file
+    form: llm
+    description: single image file
+    required: false
+    label:
+      en_US: image file
+    human_description:
+      en_US: image file
+    llm_description: image file
+output_schema:
+  type: object
+  properties:
+    flagged:
+      type: boolean
+      description: Whether any of the below categories are flagged.
+    categories:
+      type: array
+      items:
+        type: boolean
+      description: A list of the categories, and whether they are flagged or not.
+    category_scores:
+      type: array
+      items:
+        type: number
+      description: A list of the categories along with their scores as predicted by model.
+    category_applied_input_types:
+      type: object
+      description: A list of the categories along with the input type(s) that the score applies to.
+
+extra:
+  python:
+    source: tools/moderation.py

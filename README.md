@@ -27,6 +27,8 @@ This repository stores **Plugins** for the **[Dify](https://github.com/langgeniu
     - Add `base_url` parameter.
 - **moderation-chakoshi**
   - Unofficial [chakoshi](https://chakoshi.ntt.com) plugin.
+- **moderation-openai**
+  - [OpenAI](https://platform.openai.com/) moderation node plugin.
 
 ## Development
 
