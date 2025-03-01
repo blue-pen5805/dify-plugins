@@ -1,0 +1,30 @@
+version: 0.0.2
+type: plugin
+author: blue_pen5805
+name: mistralai
+label:
+  en_US: MistralAI
+description:
+  en_US: Models provided by MistralAI, such as open-mistral-7b and mistral-large-latest.
+icon: icon_s_en.png
+resource:
+  memory: 1048576
+  permission:
+    model:
+      enabled: true
+      llm: true
+plugins:
+  models:
+    - provider/mistralai.yaml
+meta:
+  arch:
+    - amd64
+    - arm64
+  runner:
+    entrypoint: main
+    language: python
+    version: "3.12"
+  version: 0.0.1
+created_at: 2025-03-01T00:00:00.00000000Z
+privacy: PRIVACY.md
+verified: false
