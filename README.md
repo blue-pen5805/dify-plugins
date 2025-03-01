@@ -41,6 +41,15 @@ This repository stores **Plugins** for the **[Dify](https://github.com/langgeniu
 - **moderation-openai**
   - [OpenAI](https://platform.openai.com/) moderation node plugin.
 
+## Upcoming / Planned Plugins
+
+- **json-tools**
+  - ...
+- **moderation-mistralai**
+  - [MistralAI](https://mistral.ai) moderation node plugin.
+- **moderation-perspective-api**
+  - [Perspective API](https://platform.openai.com/) analyze node plugin.
+
 ## Development
 
 ### Installation
