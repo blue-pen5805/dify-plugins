@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+set -eu
+
+if [ -z "$1" ]; then
+  echo "Usage: $0 <package_name>"
+  exit 1
+fi
+
+PACKAGE_DIR="$1"
+OUTPUTS_DIR="./.outputs"
+
+# Check if directory exists
+if [ ! -d "$PACKAGE_DIR" ]; then
+  echo "Error: Directory '$PACKAGE_DIR' does not exist."
+  exit 1
+fi
+
+# Read author and version from manifest.yaml
+if [ -f "$PACKAGE_DIR/manifest.yaml" ]; then
+  AUTHOR=$(grep -E "^author:" "$PACKAGE_DIR/manifest.yaml" | cut -d ":" -f2 | xargs)
+  VERSION=$(grep -E "^version:" "$PACKAGE_DIR/manifest.yaml" | cut -d ":" -f2 | xargs)
+  
+  if [ -n "$AUTHOR" ] && [ -n "$VERSION" ]; then
+    OUTPUT_NAME="$PACKAGE_DIR-$AUTHOR-$VERSION"
+  else
+    OUTPUT_NAME="$PACKAGE_DIR"
+    echo "Error: Could not extract author or version from manifest.yaml"
+  fi
+else
+  OUTPUT_NAME="$PACKAGE_DIR"
+  echo "Error: manifest.yaml not found in $PACKAGE_DIR"
+  exit 1
+fi
+
+./dify-plugin plugin package "$PACKAGE_DIR" -o "$OUTPUTS_DIR/$AUTHOR-${PACKAGE_DIR}_$VERSION.difypkg"

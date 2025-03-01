@@ -1,15 +1,19 @@
 # Dify Plugins Repository
 
-This repository is storing **Plugins** for the **[Dify](https://github.com/langgenius/dify)** application.
+This repository stores **Plugins** for the **[Dify](https://github.com/langgenius/dify)** application.
 
 ## Requirements
 
 - **Dify Version**: `1.0.0` or later
-- **Environment Variable Setting**:You need to set the `FORCE_VERIFYING_SIGNATURE=false` in environment variables
+- **Environment Variable Setting (Self-Host)**: You need to set `FORCE_VERIFYING_SIGNATURE=false` in environment variables
 
-## Usage
+## Usage / Installation
 
-[Official Documentation](https://docs.dify.ai/plugins/quick-start/install-and-use-plugins#install-plugins)
+[Official Documentation](https://docs.dify.ai/plugins/quick-start/install-plugins#github)
+
+1. Install from GitHub in Dify plugins page.
+2. Enter GitHub repo URL `https://github.com/blue-pen5805/dify-plugins`
+3. Select the plugin you want to install.
 
 ## List of Plugins
 
@@ -24,10 +28,18 @@ This repository is storing **Plugins** for the **[Dify](https://github.com/langg
 
 ## Development
 
-### Packaging
+### Installation
 
-[Official Documentation](https://docs.dify.ai/plugins/publish-plugins/package-plugin-file-and-publish)
+To install and get started with the plugin development, run the following command:
 
 ```bash
-dify plugin package ./your_plugin_project
+./dify-plugin
+```
+
+### Packaging
+
+To package the plugin, run the following command:
+
+```bash
+./package plugin-dir-name
 ```
