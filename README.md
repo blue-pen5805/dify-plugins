@@ -21,12 +21,16 @@ This repository stores **Plugins** for the **[Dify](https://github.com/langgeniu
 
 - **Cerebras**
   - Models provided by [Cerebras](https://cloud.cerebras.ai/)
-- **Gemini-oai-compatible**
-  - [Gemini OpenAI compatibility Endpoint](https://ai.google.dev/gemini-api/docs/openai) (for [llm-proxy-on-cloudflare-workers](https://github.com/blue-pen5805/llm-proxy-on-cloudflare-workers))
 - **groq**
   - Models provided by [Groq](https://console.groq.com/)
   - forked from [Official Plugin](https://github.com/langgenius/dify-official-plugins/tree/main/models/groq)
     - Add `base_url` parameter.
+- **mistralai**
+  - Models provided by [MistralAI](https://mistral.ai)
+  - forked from [Official Plugin](https://github.com/langgenius/dify-official-plugins/tree/main/models/mistralai)
+    - Add `base_url` parameter.
+- **Gemini-oai-compatible**
+  - [Gemini OpenAI compatibility Endpoint](https://ai.google.dev/gemini-api/docs/openai) (for [llm-proxy-on-cloudflare-workers](https://github.com/blue-pen5805/llm-proxy-on-cloudflare-workers))
 
 ### Tools
 
