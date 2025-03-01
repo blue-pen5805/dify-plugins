@@ -1,0 +1,17 @@
+identity:
+  author: blue_pen5805
+  name: image-shrink
+  label:
+    en_US: image-shrink
+    zh_Hans: image-shrink
+    pt_BR: image-shrink
+  description:
+    en_US: shrink image size
+    zh_Hans: shrink image size
+    pt_BR: shrink image size
+  icon: icon_s_en.png
+tools:
+  - tools/image-shrink.yaml
+extra:
+  python:
+    source: provider/image-shrink.py

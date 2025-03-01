@@ -17,6 +17,8 @@ This repository stores **Plugins** for the **[Dify](https://github.com/langgeniu
 
 ## List of Plugins
 
+### Model Providers
+
 - **Cerebras**
   - Models provided by [Cerebras](https://cloud.cerebras.ai/)
 - **Gemini-oai-compatible**
@@ -25,6 +27,11 @@ This repository stores **Plugins** for the **[Dify](https://github.com/langgeniu
   - Models provided by [Groq](https://console.groq.com/)
   - forked from [Official Plugin](https://github.com/langgenius/dify-official-plugins/tree/main/models/groq)
     - Add `base_url` parameter.
+
+### Tools
+
+- **image-shrink**
+  - Image file shrink automatically.
 - **moderation-chakoshi**
   - Unofficial [chakoshi](https://chakoshi.ntt.com) plugin.
 - **moderation-openai**

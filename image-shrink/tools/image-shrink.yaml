@@ -1,0 +1,52 @@
+identity:
+  name: image-shrink
+  author: blue_pen5805
+  label:
+    en_US: image-shrink
+description:
+  human:
+    en_US: shrink image size
+  llm: shrink image size
+parameters:
+  - name: image
+    type: file
+    required: true
+    label:
+      en_US: single image file
+    human_description:
+      en_US: shrink image size
+    llm_description: shrink image size
+    form: llm
+  - name: dimension
+    type: number
+    required: true
+    label:
+      en_US: dimension
+    human_description:
+      en_US: The longer of width and height.
+    llm_description: The longer of width and height.
+    form: form
+    default: 1024
+  - name: image_type
+    type: select
+    options:
+      - label:
+          en_US: webp
+        value: webp
+      - label:
+          en_US: jpeg
+        value: jpeg
+      - label:
+          en_US: png
+        value: png
+    required: true
+    label:
+      en_US: image type
+    human_description:
+      en_US: The type of image.
+    llm_description: The type of image.
+    form: form
+    default: webp
+extra:
+  python:
+    source: tools/image-shrink.py

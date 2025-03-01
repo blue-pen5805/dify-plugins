@@ -1,0 +1,29 @@
+version: 0.0.1
+type: plugin
+author: blue_pen5805
+name: image-shrink
+label:
+  en_US: image-shrink
+description:
+  en_US: shrink image size
+icon: icon_s_en.png
+resource:
+  memory: 1048576
+  permission:
+    tool:
+      enabled: true
+plugins:
+  tools:
+    - provider/image-shrink.yaml
+meta:
+  version: 0.0.1
+  arch:
+    - amd64
+    - arm64
+  runner:
+    language: python
+    version: "3.12"
+    entrypoint: main
+created_at: 2025-03-01T12:19:52.699448573Z
+privacy: PRIVACY.md
+verified: false
