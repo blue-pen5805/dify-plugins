@@ -1,0 +1,55 @@
+identity:
+  name: chakoshi / Judge text API
+  author: blue_pen5805
+  label:
+    en_US: chakoshi / Judge text API
+description:
+  human:
+    en_US: Judge text
+  llm: Judge text
+parameters:
+  - name: text
+    type: string
+    form: llm
+    required: true
+    label:
+      en_US: text
+    human_description:
+      en_US: text
+    llm_description: text
+  - name: model
+    type: string
+    form: form
+    required: false
+    label:
+      en_US: model name (optional)
+    human_description:
+      en_US: model name (optional)
+    llm_description: model name (optional)
+  - name: category_set_id
+    type: string
+    form: form
+    required: false
+    label:
+      en_US: category set ID (optional)
+    human_description:
+      en_US: category set ID (optional)
+    llm_description: category set ID (optional)
+output_schema:
+  type: object
+  properties:
+    unsafe_flag:
+      type: boolean
+      description: true if the text is unsafe
+    label_str:
+      type: string
+      description: safe or unsafe
+    unsafe_score:
+      type: number
+      description: The score of the unsafe text
+    unsafe_category:
+      type: string
+      description: The category of the unsafe text
+extra:
+  python:
+    source: tools/judge_text.py
