@@ -9,9 +9,9 @@ import json
 
 class ChakoshiJudgeTextTool(Tool):
     def _invoke(self, tool_parameters: dict[str, Any]) -> Generator[ToolInvokeMessage]:
-        text = tool_parameters.get("text")
-        model = tool_parameters.get("model") or "chakoshi-moderation-241223"
-        category_set_id = tool_parameters.get("category_set_id")
+        text: str = tool_parameters.get("text")
+        model: str = tool_parameters.get("model") or "chakoshi-moderation-241223"
+        category_set_id: str | None = tool_parameters.get("category_set_id")
 
         url = "https://api.beta.chakoshi.ntt.com/v1/judge/text"
         headers = {
@@ -28,12 +28,17 @@ class ChakoshiJudgeTextTool(Tool):
 
         if response.is_success:
             json_response = response.json()
+            result = json_response["results"]
+            unsafe_flag = result["unsafe_flag"]
+            unsafe_score = result["unsafe_score"]
+            unsafe_category = result["unsafe_category"]
 
-            yield self.create_text_message(json.dumps(json_response))
-            yield self.create_json_message(json_response)
-            yield self.create_variable_message("unsafe_flag", json_response["results"]["unsafe_flag"])
-            yield self.create_variable_message("label_str", json_response["results"]["label_str"])
-            yield self.create_variable_message("unsafe_score", json_response["results"]["unsafe_score"])
-            yield self.create_variable_message("unsafe_category", json_response["results"]["unsafe_category"])
+            return [
+                self.create_json_message(json_response),
+                self.create_text_message("true" if unsafe_flag else "false"),
+                self.create_variable_message("flagged", unsafe_flag),
+                self.create_variable_message("unsafe_score", unsafe_score),
+                self.create_variable_message("flagged_categories", [unsafe_category] if unsafe_category else []),
+            ]
         else:
             raise ValueError(response.text)
