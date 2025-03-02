@@ -12,33 +12,40 @@ This repository stores **Plugins** for the **[Dify](https://github.com/langgeniu
 [Official Documentation](https://docs.dify.ai/plugins/quick-start/install-plugins#github)
 
 1. Install from GitHub in Dify plugins page.
-2. Enter GitHub repo URL `https://github.com/blue-pen5805/dify-plugins`
+2. Enter GitHub repo URL `https://github.com/blue-pen5805/{PLUGIN_REPOSITORY_NAME}`
 3. Select the plugin you want to install.
 
 ## List of Plugins
 
 ### Model Providers
 
-- **Cerebras**
+- **[Cerebras](https://github.com/blue-pen5805/dify-plugin-cerebras)**
+  - `https://github.com/blue-pen5805/dify-plugin-cerebras`
   - Models provided by [Cerebras](https://cloud.cerebras.ai/)
-- **groq**
+- **[Groq](https://github.com/blue-pen5805/dify-plugin-groq)**
+  - `https://github.com/blue-pen5805/dify-plugin-groq`
   - Models provided by [Groq](https://console.groq.com/)
   - forked from [Official Plugin](https://github.com/langgenius/dify-official-plugins/tree/main/models/groq)
     - Add `base_url` parameter.
-- **mistralai**
+- **[Mistral AI](https://github.com/blue-pen5805/dify-plugin-mistralai)**
+  - `https://github.com/blue-pen5805/dify-plugin-mistralai`
   - Models provided by [MistralAI](https://mistral.ai)
   - forked from [Official Plugin](https://github.com/langgenius/dify-official-plugins/tree/main/models/mistralai)
     - Add `base_url` parameter.
-- **Gemini-oai-compatible**
+- **[Gemini / OpenAI Compatible Endpoint](https://github.com/blue-pen5805/dify-plugin-gemini-oai-compatible)**
+  - `https://github.com/blue-pen5805/dify-plugin-gemini-oai-compatible`
   - [Gemini OpenAI compatibility Endpoint](https://ai.google.dev/gemini-api/docs/openai) (for [llm-proxy-on-cloudflare-workers](https://github.com/blue-pen5805/llm-proxy-on-cloudflare-workers))
 
 ### Tools
 
-- **image-shrink**
+- **[image-shrink](https://github.com/blue-pen5805/dify-plugin-image-shrink)**
+  - `https://github.com/blue-pen5805/dify-plugin-image-shrink`
   - Image file shrink automatically.
-- **moderation-chakoshi**
+- **[moderation-chakoshi](https://github.com/blue-pen5805/dify-plugin-moderation-chakoshi)**
+  - `https://github.com/blue-pen5805/dify-plugin-moderation-chakoshi`
   - Unofficial [chakoshi](https://chakoshi.ntt.com) plugin.
-- **moderation-openai**
+- **[moderation-openai](https://github.com/blue-pen5805/dify-plugin-moderation-openai)**
+  - `https://github.com/blue-pen5805/dify-plugin-moderation-openai`
   - [OpenAI](https://platform.openai.com/) moderation node plugin.
 
 ## Upcoming / Planned Plugins
@@ -50,20 +57,7 @@ This repository stores **Plugins** for the **[Dify](https://github.com/langgeniu
 - **moderation-perspective-api**
   - [Perspective API](https://platform.openai.com/) analyze node plugin.
 
-## Development
+## Other Resources
 
-### Installation
-
-To install and get started with the plugin development, run the following command:
-
-```bash
-./dify-plugin
-```
-
-### Packaging
-
-To package the plugin, run the following command:
-
-```bash
-./package plugin-dir-name
-```
+- Plugin template repository
+  - https://github.com/blue-pen5805/dify-plugin-template
