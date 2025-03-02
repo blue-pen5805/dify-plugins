@@ -23,3 +23,5 @@ jobs:
         with:
           files: ./.outputs/*
           make_latest: true
+          body: |
+            ${{ github.event.head_commit.message }}
