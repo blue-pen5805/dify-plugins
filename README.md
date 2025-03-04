@@ -38,6 +38,9 @@ This repository stores **Plugins** for the **[Dify](https://github.com/langgeniu
 
 ### Tools
 
+- **[json-tools](https://github.com/blue-pen5805/dify-plugin-json-tools)**
+  - `https://github.com/blue-pen5805/dify-plugin-json-tools`
+  - JSON tools plugin. (e.g. JSON string to Object, JSON stringt to Yaml, etc.)
 - **[image-shrink](https://github.com/blue-pen5805/dify-plugin-image-shrink)**
   - `https://github.com/blue-pen5805/dify-plugin-image-shrink`
   - Image file shrink automatically.
@@ -56,8 +59,7 @@ This repository stores **Plugins** for the **[Dify](https://github.com/langgeniu
 
 ## Upcoming / Planned Plugins
 
-- **json-tools**
-  - ...
+...
 
 ## Other Resources
 
