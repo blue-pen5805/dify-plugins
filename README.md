@@ -46,9 +46,12 @@ This repository stores **Plugins** for the **[Dify](https://github.com/langgeniu
 
 ### Tools
 
+- **[vertex-ai-image-generation](https://github.com/blue-pen5805/dify-plugin-vertex-ai-image-generation)**
+  - `https://github.com/blue-pen5805/dify-plugin-vertex-ai-image-generation`
+  - [Vertex AI](https://cloud.google.com/vertex-ai/docs/generative-ai) image generation node plugin.
 - **[json-tools](https://github.com/blue-pen5805/dify-plugin-json-tools)**
   - `https://github.com/blue-pen5805/dify-plugin-json-tools`
-  - JSON tools plugin. (e.g. JSON string to Object, JSON stringt to Yaml, etc.)
+  - JSON tools plugin. (e.g. JSON string to Object, JSON string to Yaml, etc.)
 - **[image-shrink](https://github.com/blue-pen5805/dify-plugin-image-shrink)**
   - `https://github.com/blue-pen5805/dify-plugin-image-shrink`
   - Image file shrink automatically.
