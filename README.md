@@ -43,6 +43,11 @@ This repository stores **Plugins** for the **[Dify](https://github.com/langgeniu
   - Models provided by [MistralAI](https://mistral.ai)
   - forked from [Official Plugin](https://github.com/langgenius/dify-official-plugins/tree/main/models/mistralai)
     - Add `base_url` parameter.
+- **[xAI](https://github.com/blue-pen5805/dify-plugin-xai)**
+  - `https://github.com/blue-pen5805/dify-plugin-xai`
+  - Models provided by [xAI](https://console.x.ai/)
+  - forked from [Official Plugin](https://github.com/langgenius/dify-official-plugins/tree/main/models/mistralai)
+    - modify parameters.
 
 ### Tools
 
