@@ -29,11 +29,12 @@ This repository stores **Plugins** for the **[Dify](https://github.com/langgeniu
   - `https://github.com/blue-pen5805/dify-plugin-gemini`
   - Models provided by [Google](https://aistudio.google.com/)
   - Add `base_url` parameter.
+  - Add `Enable file upload` options. (Disable to use `Files API`)
   - Modify model parameters.
     - Temperature range: `0.0` - `2.0`
     - Add `response_format` parameter.
     - Add `safety_settings` parameter.
-  - Add `deprecated` flags for replaced models.
+  - Remove deprecated models.
 - **[Groq](https://github.com/blue-pen5805/dify-plugin-groq)**
   - `https://github.com/blue-pen5805/dify-plugin-groq`
   - Models provided by [Groq](https://console.groq.com/)
