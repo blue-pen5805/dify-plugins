@@ -19,35 +19,36 @@ This repository stores **Plugins** for the **[Dify](https://github.com/langgeniu
 
 ### Model Providers
 
-- **[Gemini / with Google Gen AI SDK](https://github.com/blue-pen5805/dify-plugin-gemini-genai-sdk)**
-  - `https://github.com/blue-pen5805/dify-plugin-gemini-genai-sdk`
-  - forked from [Official Plugin](https://github.com/langgenius/dify-official-plugins/tree/main/models/gemini)
-    - Modified to use the [Google Gen AI SDK](https://github.com/googleapis/python-genai) instead of the [Google AI Python SDK for the Gemini API](https://github.com/google-gemini/generative-ai-python).
-  - Add `base_url` provider parameter.
-  - Support `Safety Settings` parameter.
-  - Support `Grounding`.
-  - Support `presence_penalty` and `frequency_penalty` parameters.
-- **[Gemini / OpenAI Compatible Endpoint](https://github.com/blue-pen5805/dify-plugin-gemini-oai-compatible)**
-  - `https://github.com/blue-pen5805/dify-plugin-gemini-oai-compatible`
-  - [Gemini OpenAI compatibility Endpoint](https://ai.google.dev/gemini-api/docs/openai) (for [llm-proxy-on-cloudflare-workers](https://github.com/blue-pen5805/llm-proxy-on-cloudflare-workers))
 - **[Cerebras](https://github.com/blue-pen5805/dify-plugin-cerebras)**
   - `https://github.com/blue-pen5805/dify-plugin-cerebras`
   - Models provided by [Cerebras](https://cloud.cerebras.ai/)
+
+#### Forked from Official Plugin
+
+- **[Gemini](https://github.com/blue-pen5805/dify-plugin-gemini)**
+  - `https://github.com/blue-pen5805/dify-plugin-gemini`
+  - Models provided by [Google](https://aistudio.google.com/)
+  - Add `base_url` parameter.
+  - Modify model parameters.
+    - Temperature range: `0.0` - `2.0`
+    - Add `response_format` parameter.
+    - Add `safety_settings` parameter.
+  - Add `deprecated` flags for replaced models.
 - **[Groq](https://github.com/blue-pen5805/dify-plugin-groq)**
   - `https://github.com/blue-pen5805/dify-plugin-groq`
   - Models provided by [Groq](https://console.groq.com/)
-  - forked from [Official Plugin](https://github.com/langgenius/dify-official-plugins/tree/main/models/groq)
-    - Add `base_url` parameter.
+  - Add `base_url` parameter.
 - **[Mistral AI](https://github.com/blue-pen5805/dify-plugin-mistralai)**
   - `https://github.com/blue-pen5805/dify-plugin-mistralai`
   - Models provided by [MistralAI](https://mistral.ai)
-  - forked from [Official Plugin](https://github.com/langgenius/dify-official-plugins/tree/main/models/mistralai)
-    - Add `base_url` parameter.
+  - Add `base_url` parameter.
 - **[xAI](https://github.com/blue-pen5805/dify-plugin-xai)**
   - `https://github.com/blue-pen5805/dify-plugin-xai`
   - Models provided by [xAI](https://console.x.ai/)
-  - forked from [Official Plugin](https://github.com/langgenius/dify-official-plugins/tree/main/models/mistralai)
-    - modify parameters.
+  - Modify model parameters.
+    - Change value ranges. (`temperature`, `presence_penalty`, `frequency_penalty`).
+    - Add `response_format` parameter.
+    - Add `reasoning_effort` parameter.
 
 ### Tools
 
