@@ -37,6 +37,10 @@ This repository stores **Plugins** for the **[Dify](https://github.com/langgeniu
     - Add `thinking_budget` parameter.
     - Add `code_execution` parameter.
   - Remove deprecated models.
+- **[OpenAI](https://github.com/blue-pen5805/dify-plugin-openai)**
+  - `https://github.com/blue-pen5805/dify-plugin-openai`
+  - Models provided by [OpenAI](https://platform.openai.com/)
+  - Add new models.
 - **[Groq](https://github.com/blue-pen5805/dify-plugin-groq)**
   - `https://github.com/blue-pen5805/dify-plugin-groq`
   - Models provided by [Groq](https://console.groq.com/)
