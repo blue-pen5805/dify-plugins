@@ -35,6 +35,7 @@ This repository stores **Plugins** for the **[Dify](https://github.com/langgeniu
     - Add `response_format` parameter.
     - Add `safety_settings` parameter.
     - Add `thinking_budget` parameter.
+    - Add `code_execution` parameter.
   - Remove deprecated models.
 - **[Groq](https://github.com/blue-pen5805/dify-plugin-groq)**
   - `https://github.com/blue-pen5805/dify-plugin-groq`
