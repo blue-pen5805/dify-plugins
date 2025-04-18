@@ -34,6 +34,7 @@ This repository stores **Plugins** for the **[Dify](https://github.com/langgeniu
     - Temperature range: `0.0` - `2.0`
     - Add `response_format` parameter.
     - Add `safety_settings` parameter.
+    - Add `thinking_budget` parameter.
   - Remove deprecated models.
 - **[Groq](https://github.com/blue-pen5805/dify-plugin-groq)**
   - `https://github.com/blue-pen5805/dify-plugin-groq`
