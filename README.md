@@ -28,14 +28,19 @@ This repository stores **Plugins** for the **[Dify](https://github.com/langgeniu
 - **[Gemini](https://github.com/blue-pen5805/dify-plugin-gemini)**
   - `https://github.com/blue-pen5805/dify-plugin-gemini`
   - Models provided by [Google](https://aistudio.google.com/)
+  - Fix `Search Sources` not working.
   - Add `base_url` parameter.
   - Add `Enable file upload` options. (Disable to use `Files API`)
   - Modify model parameters.
-    - Temperature range: `0.0` - `2.0`
     - Add `response_format` parameter.
     - Add `safety_settings` parameter.
     - Add `thinking_budget` parameter.
+    - Add `include_thoughts` parameter.
+    - Add `url_context` parameter.
     - Add `code_execution` parameter.
+    - Add `include_search_sources` parameter.
+  - Supports `FinishReason.SAFETY`
+  - Add new models.
   - Remove deprecated models.
 - **[OpenAI](https://github.com/blue-pen5805/dify-plugin-openai)**
   - `https://github.com/blue-pen5805/dify-plugin-openai`
