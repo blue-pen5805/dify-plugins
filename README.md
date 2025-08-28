@@ -42,6 +42,13 @@ This repository stores **Plugins** for the **[Dify](https://github.com/langgeniu
   - Supports `FinishReason.SAFETY`
   - Add new models.
   - Remove deprecated models.
+- **[Cohere](https://github.com/blue-pen5805/dify-plugin-cohere)**
+  - `https://github.com/blue-pen5805/dify-plugin-cohere`
+  - Models provided by [Cohere](https://cohere.ai/)
+  - Update cohere-python SDK and v2/chat endpoint support.
+    - Support image input.
+  - Add new models.
+  - Remove old models.
 - **[OpenAI](https://github.com/blue-pen5805/dify-plugin-openai)**
   - `https://github.com/blue-pen5805/dify-plugin-openai`
   - Models provided by [OpenAI](https://platform.openai.com/)
