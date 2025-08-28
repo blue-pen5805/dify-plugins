@@ -47,6 +47,7 @@ This repository stores **Plugins** for the **[Dify](https://github.com/langgeniu
   - Models provided by [Cohere](https://cohere.ai/)
   - Update cohere-python SDK and v2/chat endpoint support.
     - Support image input.
+    - Support JSON response format.
   - Add new models.
   - Remove old models.
 - **[OpenAI](https://github.com/blue-pen5805/dify-plugin-openai)**
